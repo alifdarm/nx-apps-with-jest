@@ -1,5 +1,5 @@
 export async function fetchData() {
-  const url = import.meta.env.VITE_API_URL;
+  const url = process.env.VITE_API_URL;
 
   if (!url) {
     throw new Error('API URL is not defined in environment variables');
